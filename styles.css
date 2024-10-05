@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header part  */
+header {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: #120323; 
+    color: #97bf04; 
+    padding: 10px;
+    gap: 20px;
+}
+
+header img {
+    max-width: 80px;
+    width: 100%; 
+    height: auto;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+/* container part  */
+#container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-top: 20px;
+}
+
+main {
+    flex: 4; 
+}
+
+figure {
+    display: flex;
+    flex-direction: row; 
+    align-items:flex-start;
+    margin: 0px 20px 10px 20px;
+}
+
+figure img {
+    flex: 1; 
+    max-width: 180px; 
+    width: 100%; 
+    height: auto; 
+    border: 3px solid #d9043d;
+    margin: 10px 10px 10px 10px;
+}
+
+figcaption {
+    flex: 3; 
+    margin: 10px 5px 10px 5px;
+}
+
+h2 {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+figcaption p {
+    margin-top: 12px;
+}
+
+aside {
+    flex: 1; 
+    background-color: #97bf04; 
+    padding: 10px 10px 25px 10px;
+}
+
+h3 {
+    margin: 10px 0px 10px 0px;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+p {
+    line-height: 1.2;
+    font-size: 10px;
+}
+
+/* footer part  */
+footer {
+    background-color: #d9043d; 
+    color: white; 
+    text-align: center; 
+    padding: 25px;
+    font-size: small;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 767px) {
+    header{
+        flex-direction: column;
+    }
+    #container {
+        flex-direction: column; 
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        max-width:700px;
+        align-items: center;
+        justify-content: center;
+    }
+    figure img {  
+        max-width:700px;
+        height: auto;
+    }   
+}
+
+@media (max-width:1000px) and (min-width:768px ) {
+
+    #container {
+            flex-direction: column;
+        }
+   figure {
+        flex-direction: row; 
+         align-items: flex-start; 
+   }
+}
